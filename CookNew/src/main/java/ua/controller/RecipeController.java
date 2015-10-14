@@ -40,6 +40,8 @@ public class RecipeController {
 		int recipeId = recipeService.save(countryName, cookTime, recipeName);
 		return "redirect:/ingredient/" + recipeId + ".html";
 	}
+	
+	//test
 
 	@RequestMapping(value = "/recipeupdate", method = RequestMethod.POST)
 	private String updateRecipe(@RequestParam int id,
